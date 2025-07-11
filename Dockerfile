@@ -1,5 +1,5 @@
-from ubuntu:focal
-maintainer rootkiter@rootkiter.com
+FROM ubuntu:focal
+MAINTAINER rootkiter@rootkiter.com
 
 WORKDIR /downloads/
 RUN mkdir /root/compile_bins
