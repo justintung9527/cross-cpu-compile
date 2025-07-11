@@ -4,7 +4,7 @@ maintainer rootkiter@rootkiter.com
 WORKDIR /downloads/
 RUN mkdir /root/compile_bins
 
-RUN apt-get update && apt-get install -y wget git vim
+RUN apt-get update && apt-get install -y wget git vim tree gcc
 
 RUN wget https://www.uclibc.org/downloads/binaries/0.9.30.1/cross-compiler-armv4l.tar.bz2
 RUN wget https://www.uclibc.org/downloads/binaries/0.9.30.1/cross-compiler-armv5l.tar.bz2
