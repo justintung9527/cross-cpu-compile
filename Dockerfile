@@ -5,23 +5,23 @@ RUN mkdir /root/compile_bins
 
 RUN apt-get update && apt-get install -y wget git vim tree gcc
 
-RUN wget https://github.com/R00tS3c/DDOS-RootSec/raw/refs/heads/master/uclib-cross-compilers/cross-compiler-armv4l.tar.bz2
-RUN wget https://github.com/R00tS3c/DDOS-RootSec/raw/refs/heads/master/uclib-cross-compilers/cross-compiler-armv5l.tar.bz2
-RUN wget https://github.com/R00tS3c/DDOS-RootSec/raw/refs/heads/master/uclib-cross-compilers/cross-compiler-i586.tar.bz2
-RUN wget https://github.com/R00tS3c/DDOS-RootSec/raw/refs/heads/master/uclib-cross-compilers/cross-compiler-i686.tar.bz2
-RUN wget https://github.com/R00tS3c/DDOS-RootSec/raw/refs/heads/master/uclib-cross-compilers/cross-compiler-m68k.tar.bz2
-RUN wget https://github.com/R00tS3c/DDOS-RootSec/raw/refs/heads/master/uclib-cross-compilers/cross-compiler-mipsel.tar.bz2
-RUN wget https://github.com/R00tS3c/DDOS-RootSec/raw/refs/heads/master/uclib-cross-compilers/cross-compiler-mips.tar.bz2
-RUN wget https://github.com/R00tS3c/DDOS-RootSec/raw/refs/heads/master/uclib-cross-compilers/cross-compiler-powerpc-440fp.tar.bz2
-RUN wget https://github.com/R00tS3c/DDOS-RootSec/raw/refs/heads/master/uclib-cross-compilers/cross-compiler-powerpc.tar.bz2
-RUN wget https://github.com/R00tS3c/DDOS-RootSec/raw/refs/heads/master/uclib-cross-compilers/cross-compiler-sh4.tar.bz2
-RUN wget https://github.com/R00tS3c/DDOS-RootSec/raw/refs/heads/master/uclib-cross-compilers/cross-compiler-sparc.tar.bz2
-RUN wget https://github.com/R00tS3c/DDOS-RootSec/raw/refs/heads/master/uclib-cross-compilers/cross-compiler-x86_64.tar.bz2
-RUN wget http://distro.ibiblio.org/slitaz/sources/packages/c/cross-compiler-armv4eb.tar.bz2
-RUN wget http://distro.ibiblio.org/slitaz/sources/packages/c/cross-compiler-armv4tl.tar.bz2
-RUN wget http://distro.ibiblio.org/slitaz/sources/packages/c/cross-compiler-armv6l.tar.bz2
-RUN wget http://distro.ibiblio.org/slitaz/sources/packages/c/cross-compiler-i486.tar.bz2
-RUN wget http://distro.ibiblio.org/slitaz/sources/packages/c/cross-compiler-mips64.tar.bz2
+RUN wget https://github.com/justintung9527/cross-cpu-compile/raw/refs/heads/master/uclib-cross-compilers/cross-compiler-armv4l.tar.bz2
+RUN wget https://github.com/justintung9527/cross-cpu-compile/raw/refs/heads/master/uclib-cross-compilers/cross-compiler-armv5l.tar.bz2
+RUN wget https://github.com/justintung9527/cross-cpu-compile/raw/refs/heads/master/uclib-cross-compilers/cross-compiler-i586.tar.bz2
+RUN wget https://github.com/justintung9527/cross-cpu-compile/raw/refs/heads/master/uclib-cross-compilers/cross-compiler-i686.tar.bz2
+RUN wget https://github.com/justintung9527/cross-cpu-compile/raw/refs/heads/master/uclib-cross-compilers/cross-compiler-m68k.tar.bz2
+RUN wget https://github.com/justintung9527/cross-cpu-compile/raw/refs/heads/master/uclib-cross-compilers/cross-compiler-mipsel.tar.bz2
+RUN wget https://github.com/justintung9527/cross-cpu-compile/raw/refs/heads/master/uclib-cross-compilers/cross-compiler-mips.tar.bz2
+RUN wget https://github.com/justintung9527/cross-cpu-compile/raw/refs/heads/master/uclib-cross-compilers/cross-compiler-powerpc-440fp.tar.bz2
+RUN wget https://github.com/justintung9527/cross-cpu-compile/raw/refs/heads/master/uclib-cross-compilers/cross-compiler-powerpc.tar.bz2
+RUN wget https://github.com/justintung9527/cross-cpu-compile/raw/refs/heads/master/uclib-cross-compilers/cross-compiler-sh4.tar.bz2
+RUN wget https://github.com/justintung9527/cross-cpu-compile/raw/refs/heads/master/uclib-cross-compilers/cross-compiler-sparc.tar.bz2
+RUN wget https://github.com/justintung9527/cross-cpu-compile/raw/refs/heads/master/uclib-cross-compilers/cross-compiler-x86_64.tar.bz2
+RUN wget https://github.com/justintung9527/cross-cpu-compile/raw/refs/heads/master/ibiblio-cross-compilers/cross-compiler-armv4eb.tar.bz2
+RUN wget https://github.com/justintung9527/cross-cpu-compile/raw/refs/heads/master/ibiblio-cross-compilers/cross-compiler-armv4tl.tar.bz2
+RUN wget https://github.com/justintung9527/cross-cpu-compile/raw/refs/heads/master/ibiblio-cross-compilers/cross-compiler-armv6l.tar.bz2
+RUN wget https://github.com/justintung9527/cross-cpu-compile/raw/refs/heads/master/ibiblio-cross-compilers/cross-compiler-i486.tar.bz2
+RUN wget https://github.com/justintung9527/cross-cpu-compile/raw/refs/heads/master/ibiblio-cross-compilers/cross-compiler-mips64.tar.bz2
 
 RUN ls *.tar.bz2 | awk '{system("tar -jxf  "$1" -C /root/compile_bins/")}'
 
